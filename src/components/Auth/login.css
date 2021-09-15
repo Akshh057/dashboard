@@ -1,0 +1,104 @@
+.main__div{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+.login__main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login__details{
+    min-height:70vh;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1em;
+    /* border: 1px solid red; */
+}
+.login__heading{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.login__heading1{
+    font-size: 18px;
+}
+.login__companies{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+.login__companiesbtn{
+    height: 3vh;
+    width: 180px;
+    padding: 0.5em;
+    border-radius: 12px;
+    color: #858585;
+    background-color: white;
+}
+.login__form{
+    height: 40vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5em;
+    /* border: 1px solid red; */
+}
+.login__label{
+    display: block;
+    margin-right: 90%;
+    font-size: 18px;
+}
+input[type="text"],input[type="password"]{
+    height: 5.6vh;
+    width: 23vw;
+    background-color: #EAEAEA;
+    margin-top: 10px;
+    border: none;
+    border-radius: 12px;
+}
+input[type="submit"]{
+    height: 5vh;
+    width: 25vw;
+    color: white;
+    background-color: #0D5F9A;
+    border:none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+@media(max-width:968px){
+    .main__div{
+        height: 140vh;
+        grid-template-columns: 100%;
+    }
+    .login__details{
+        height: 80vh;
+        width: 70%;
+    }
+    .login__companies{
+        height: 12vh;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .login__companiesbtn{
+        width: 150px;
+    }
+    input[type="text"],input[type="password"]{
+        width: 60vw;
+    }
+}

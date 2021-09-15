@@ -6,6 +6,7 @@ import { actionTypes } from '../../reducer';
 import SignUp from './SignUp';
 const Login = () => {
     const [{ }, dispatch, user] = useStateValue();
+    //sign ip with google
     const [show, setShow] = useState(false)
     const signIn = () => {
         auth

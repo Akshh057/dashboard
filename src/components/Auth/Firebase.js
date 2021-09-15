@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 
-
+//firebase config
 const firebaseConfig = {
     apiKey: "AIzaSyAIHPGqbfpS55HC5-l4p5KtcgtnmcW7iuw",
     authDomain: "admin-dashboard-eba82.firebaseapp.com",

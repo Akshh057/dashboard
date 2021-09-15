@@ -5,10 +5,12 @@ import { useStateValue } from '../../StateProvider';
 import { actionTypes } from '../../reducer';
 const SignUp = ({ setShow, show }) => {
     const [{ }, dispatch] = useStateValue();
+    //sign up with google
     const signUp = () => {
         auth
             .signInWithPopup(provider)
             .then((result) => {
+                //using useReducer hook to set the user after successfull sign up
                 dispatch({
                     type: actionTypes.SET_USER,
                     user: result.user,

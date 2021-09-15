@@ -12,6 +12,7 @@ import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
 const Dash = () => {
     return (
+        //Routing using React-Router.
         <Router>
             <Topbar />
             <div className="container">

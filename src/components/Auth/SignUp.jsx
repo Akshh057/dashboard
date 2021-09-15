@@ -4,7 +4,7 @@ import { auth, provider } from './Firebase';
 import { useStateValue } from '../../StateProvider';
 import { actionTypes } from '../../reducer';
 const SignUp = ({ setShow, show }) => {
-    const [{ }, dispatch, user] = useStateValue();
+    const [dispatch] = useStateValue();
     const signUp = () => {
         auth
             .signInWithPopup(provider)

@@ -5,7 +5,7 @@ import { useStateValue } from '../../StateProvider';
 import { actionTypes } from '../../reducer';
 import { Button } from "@material-ui/core";
 export default function Topbar() {
-  const [dispatch] = useStateValue();
+  const [{ }, dispatch] = useStateValue();
   const logout = () => {
     dispatch({
       type: actionTypes.LOGOUT_USER,

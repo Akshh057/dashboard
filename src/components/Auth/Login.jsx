@@ -12,12 +12,13 @@ const Login = () => {
         auth
             .signInWithPopup(provider)
             .then((result) => {
+                //using useReducer hook to set the user after successfull sign in
                 dispatch({
                     type: actionTypes.SET_USER,
                     user: result.user,
                 });
             })
-            .catch((error) => alert(error.message));
+            .catch((error) => alert(error));
     }
     return (
         <>
@@ -32,8 +33,8 @@ const Login = () => {
                                 <span className="login__heading" >Sign In</span>
                                 <span className="login__heading1">Sign in to your account</span>
                                 <div className="login__companies">
-                                    <span className="login__companiesbtn" onClick={signIn}>Sign in with Google </span>
-                                    <span className="login__companiesbtn">Sign in with Apple </span>
+                                    <button className="login__companiesbtn" onClick={signIn}>Sign in with Google </button>
+                                    <button className="login__companiesbtn">Sign in with Apple </button>
                                 </div>
                                 <div className="login__form">
                                     <p>

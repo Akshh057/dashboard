@@ -28,8 +28,8 @@ const SignUp = ({ setShow, show }) => {
                     <span className="signup__heading">Create an Account</span>
                     <span className="signup__heading1">Create an Account to use Dashboard</span>
                     <div className="signup__companies">
-                        <span className="signup__companiesbtn" onClick={signUp}>Sign up with Google</span>
-                        <span className="signup__companiesbtn">Sign up with Apple</span>
+                        <button className="signup__companiesbtn" onClick={signUp}>Sign up with Google</button>
+                        <button className="signup__companiesbtn">Sign up with Apple</button>
                     </div>
                     <div className="signup__form">
                         <p>

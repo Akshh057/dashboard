@@ -38,11 +38,12 @@
     /* border: 1px solid red; */
 }
 .login__companiesbtn{
-    height: 3vh;
+    height: 5vh;
     width: 180px;
     padding: 0.5em;
     border-radius: 12px;
     color: #858585;
+    border: none;
     background-color: white;
 }
 .login__form{
